@@ -9,17 +9,17 @@ Time_bound = input("Is it time-bound? (yes/no): ")
 
 match Priority, Time_bound:
     case ("high", "yes"):
-        print(f"Note '{Task}' is high priority and time-bound. Schedule it immediately.")
+        print(f"Reminder: '{Task}' is a high priority task that requires immediate attention today!")
     case ("high", "no"):
-        print(f"Note '{Task}' is high priority but not time-bound. Schedule it soon.")
+        print(f"Note: '{Task}' is high priority. Schedule it soon.")
     case ("medium", "yes"):
-        print(f"Note '{Task}' is medium priority and time-bound. Schedule it within the week.")
+        print(f"Note: '{Task}' is medium priority and time-bound. Schedule it within the week.")
     case ("medium", "no"):
-        print(f"Note '{Task}' is medium priority and not time-bound. Schedule it when possible.")
+        print(f"Note: '{Task}' is medium priority and not time-bound. Schedule it when possible.")
     case ("low", "yes"):
-        print(f"Note '{Task}' is low priority but time-bound. Schedule it by the end of the month.")
+        print(f"Note: '{Task}' is a low priority task. Try to complete it before the deadline.")
     case ("low", "no"):
-        print(f"Note '{Task}' is low priority and not time-bound. You can do it later.")
+        print(f"Note: '{Task}' is a low priority task. Consider completing it when you have free time.")
     case _:
         print("Invalid input. Please check your priority and time-bound status.")
 
