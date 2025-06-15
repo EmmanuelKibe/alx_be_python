@@ -18,4 +18,3 @@ class BankAccount:
         print(f"Current balance: ${self.account_balance:.2f}") 
     
 
-account1 = BankAccount(100)
