@@ -26,7 +26,7 @@ class Library:
                 return
         print(f"'{title}' is not available for checkout.")
 
-    def return_book(self):
+    def return_book(self, title):
         """Return a checked-out book by title."""
         for book in self.books:
             if book.title == title and book.is_checked_out:
