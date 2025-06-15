@@ -6,7 +6,7 @@ class Book:
 
 class Library:
     def __init__(self):
-        self.books = []
+        self._books = []
 
     def add_book(self, book):
         """Add a book to the library."""
