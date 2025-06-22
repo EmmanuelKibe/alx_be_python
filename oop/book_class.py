@@ -7,7 +7,7 @@ class Book:
         
     #Destructor method
     def __del__(self):
-        print(f"Deleting {self.title} by {self.author}")
+        print(f"Deleting {self.title}")
 
     #String representation method
     def __str__(self):
