@@ -10,17 +10,17 @@ class Library:
 
     def add_book(self, book):
         """Add a book to the library."""
-        self.books.append(book)
+        self._books.append(book)
 
     def list_available_books(self):
         """List all available books in the library."""
-        available_books = [book for book in self.books if not book.is_checked_out]
+        available_books = [book for book in self._books if not book.is_checked_out]
         for book in available_books:
             print(f"{book.title} by {book.author}")
 
     def check_out_book(self, title):
         """Check out a book by title."""
-        for book in self.books:
+        for book in self._books:
             if book.title == title and not book.is_checked_out:
                 book.is_checked_out = True
                 return
@@ -28,7 +28,7 @@ class Library:
 
     def return_book(self, title):
         """Return a checked-out book by title."""
-        for book in self.books:
+        for book in self._books:
             if book.title == title and book.is_checked_out:
                 book.is_checked_out = False
                 return
